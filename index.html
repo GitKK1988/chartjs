@@ -5,16 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chart.js</title>
+    <link rel="stylesheet" href="style.css">
 
    
 </head>
 <body>
     
 
-    <div>
-        <canvas id="myChart"></canvas>
-      </div>
+    <div class="container">
 
+
+        <div class="chartitem">
+            <canvas id="myChart1"></canvas>
+        </div>
+        <div class="chartitem">
+            <canvas id="myChart2"></canvas>
+        </div>
+        <div class="chartitem">
+            <canvas id="myChart3"></canvas>
+        </div>
+        <div class="chartitem">
+            <canvas id="myChart4"></canvas>
+        </div>
+
+    </div>
  
 
  
@@ -23,41 +37,8 @@
      <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js"></script>
      
 
-     
-<script>
-  const labels = [
-    'January',
-    'February',
-    'March',
-    'April',
-    'May',
-    'June',
-    'Juli',
-    'August',
-  ];
+    <script src="chart1.js"></script>
+    <script src="chart2.js"></script>
 
-  const data = {
-    labels: labels,
-    datasets: [{
-      label: 'My First dataset',
-      backgroundColor: 'rgb(255, 99, 132)',
-      borderColor: 'rgb(255, 99, 132)',
-      data: [0, 10, 5, 2, 50, 30, 55],
-    }]
-  };
-
-  const config = {
-    type: 'line',
-    data: data,
-    options: {}
-  };
-</script>
-
-<script>
-  const myChart = new Chart(
-    document.getElementById('myChart'),
-    config
-  );
-</script>
 
 </html>
